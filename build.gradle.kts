@@ -2,20 +2,9 @@ plugins {
     id("java")
 }
 
-group = "dev.speedslicer"
-version = "1.0-SNAPSHOT"
+group = "net.ada"
+version = "1.0"
 
-sourceSets {
-    named("main") {
-        java {
-            srcDir("src/core/java")
-        }
-    }
-}
 repositories {
     mavenCentral()
-}
-
-dependencies {
-
 }

@@ -15,7 +15,9 @@ public class Herz {
     List<HerzPackage> herzPackageList;
     EventBus eventBus;
     Logger logger;
+    public static Herz INSTANCE;
     public Herz() {
+        INSTANCE = this;
         eventBus = new EventBus();
         herzPackageList = new ArrayList<>();
         logger = Logger.getLogger("[Herz Logger]");

@@ -4,12 +4,33 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/eag/1_8_8" name="Herz-1_8">
+                <projects>
+                  <project path="$PROJECT_DIR$/eag/1_8_8" />
+                  <project path="$PROJECT_DIR$/eag/1_8_8/common" />
+                  <project path="$PROJECT_DIR$/eag/1_8_8/desktop-lwjgl" />
+                  <project path="$PROJECT_DIR$/eag/1_8_8/teavm-js" />
+                  <project path="$PROJECT_DIR$/eag/1_8_8/teavm-wasm-gc" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/eag/1_8_8" />
+            <option value="$PROJECT_DIR$/eag/1_8_8/common" />
+            <option value="$PROJECT_DIR$/eag/1_8_8/desktop-lwjgl" />
+            <option value="$PROJECT_DIR$/eag/1_8_8/teavm-js" />
+            <option value="$PROJECT_DIR$/eag/1_8_8/teavm-wasm-gc" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="true" />
         <option name="myGradleHome" value="" />
       </GradleProjectSettings>
     </option>
