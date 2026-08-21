@@ -1,5 +1,5 @@
-rootProject.name = "Herz-1_8"
-include("desktop-lwjgl")
+rootProject.name = "herz"
+include("desktop")
 include("teavm-js")
-include("teavm-wasm-gc")
+include("teavm-wasm_gc")
 include("common")

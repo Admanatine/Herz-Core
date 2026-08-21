@@ -1,0 +1,27 @@
+{
+  "herz_version": "0.0.0",
+  "package_name": "ada:core",
+  "package_version": "0.0.0",
+  "uuid": "f237331c-60f8-4fe5-98c2-c14fbc4ed143",
+  "authors": [
+    "Shaun - SpeedSlicer"
+  ],
+  "description": [
+    "Core API for Herz"
+  ],
+  "platformTarget": "eagler/1_8_8",
+  "platformTargetVersion": "u53",
+  "platformAuthor": "lax1dude",
+  "resourceFolders": [
+    "herz"
+  ],
+  "platform_target_mappings": {
+    "common": "common.jar",
+    "lwjgl": "lwjgl.jar",
+    "teavm-js": "teavm-js.jar",
+    "teavm-wasm_gc": "teavm-wasm_gc.jar"
+
+  },
+  "dependents": {
+  }
+}

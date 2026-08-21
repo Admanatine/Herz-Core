@@ -4,6 +4,7 @@ sourceSets {
     named("main") {
         java {
             srcDir("src/main/java")
+            srcDir("../../../src/core/java")
         }
     }
 }
