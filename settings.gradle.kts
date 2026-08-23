@@ -1,2 +1,2 @@
 rootProject.name = "Herz-Core"
-includeBuild("eag/1_8_8")
+includeBuild("eagler/1_8_8")

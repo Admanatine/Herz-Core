@@ -12,7 +12,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MinecraftMixin {
     @Inject(method = "<init>", at = @At("HEAD"))
     private void onInit(CallbackInfo ci) {
+
         Herz herz = new Herz();
+        System.out.println("Initialized Herz");
     }
     @Inject(method = "run", at = @At("HEAD"))
     private void onInitialize(CallbackInfo ci) {
