@@ -6,10 +6,11 @@ import net.ada.herz.core.api.eventbus.events.impl.core.ClientInitEvent;
 import net.ada.herz.core.api.eventbus.events.impl.core.MinecraftInitEvent;
 import net.ada.herz.core.api.eventbus.handler.EventBus;
 import net.ada.herz.core.api.eventbus.handler.EventHandler;
+import net.lax1dude.eaglercraft.v1_8.log4j.LogManager;
+import net.lax1dude.eaglercraft.v1_8.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class Herz {
     List<HerzPackage> herzPackageList;
@@ -17,14 +18,13 @@ public class Herz {
     Logger logger;
     public static Herz INSTANCE;
     public Herz() {
-        INSTANCE = this;
         eventBus = new EventBus();
         herzPackageList = new ArrayList<>();
-        logger = Logger.getLogger("[Herz Logger]");
+        logger = LogManager.getLogger("[Herz]");
         // register core event
         registerEvents();
         registerListeners();
-
+        INSTANCE = this;
     }
     public void registerEvents() {
         eventBus.addEvent(new EventHandler<>(ClientInitEvent.class));

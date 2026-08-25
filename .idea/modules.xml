@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eag/1_8_8/common/1_8_8.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eag/1_8_8/common/1_8_8.common.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eag/1_8_8/common/1_8_8.common.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eag/1_8_8/common/1_8_8.common.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eag/1_8_8/desktop/1_8_8.desktop.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eag/1_8_8/desktop/1_8_8.desktop.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eag/1_8_8/desktop/1_8_8.desktop.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eag/1_8_8/desktop/1_8_8.desktop.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eag/1_8_8/teavm-js/1_8_8.teavm-js.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eag/1_8_8/teavm-js/1_8_8.teavm-js.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eag/1_8_8/teavm-js/1_8_8.teavm-js.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eag/1_8_8/teavm-js/1_8_8.teavm-js.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eag/1_8_8/teavm-wasm_gc/1_8_8.teavm-wasm_gc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eag/1_8_8/teavm-wasm_gc/1_8_8.teavm-wasm_gc.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eag/1_8_8/teavm-wasm_gc/1_8_8.teavm-wasm_gc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eag/1_8_8/teavm-wasm_gc/1_8_8.teavm-wasm_gc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eagler/1_8_8/common/net.ada.1_8_8.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eagler/1_8_8/common/net.ada.1_8_8.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eagler/1_8_8/common/net.ada.1_8_8.common.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eagler/1_8_8/common/net.ada.1_8_8.common.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eagler/1_8_8/desktop/net.ada.1_8_8.desktop.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eagler/1_8_8/desktop/net.ada.1_8_8.desktop.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eagler/1_8_8/desktop/net.ada.1_8_8.desktop.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eagler/1_8_8/desktop/net.ada.1_8_8.desktop.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eagler/1_8_8/teavm-js/net.ada.1_8_8.teavm-js.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eagler/1_8_8/teavm-js/net.ada.1_8_8.teavm-js.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eagler/1_8_8/teavm-js/net.ada.1_8_8.teavm-js.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eagler/1_8_8/teavm-js/net.ada.1_8_8.teavm-js.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eagler/1_8_8/teavm-wasm_gc/net.ada.1_8_8.teavm-wasm_gc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eagler/1_8_8/teavm-wasm_gc/net.ada.1_8_8.teavm-wasm_gc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eagler/1_8_8/teavm-wasm_gc/net.ada.1_8_8.teavm-wasm_gc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eagler/1_8_8/teavm-wasm_gc/net.ada.1_8_8.teavm-wasm_gc.test.iml" />
     </modules>
   </component>
 </project>

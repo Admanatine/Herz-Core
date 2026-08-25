@@ -62,3 +62,4 @@ val resetBuildFolders = tasks.register("resetBuildFolders") {
         ":teavm-wasm_gc:clean",
         )
 }
+    

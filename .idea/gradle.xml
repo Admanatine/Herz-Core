@@ -7,13 +7,13 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT">
             <builds>
-              <build path="$PROJECT_DIR$/eag/1_8_8" name="herz">
+              <build path="$PROJECT_DIR$/eagler/1_8_8" name="herz">
                 <projects>
-                  <project path="$PROJECT_DIR$/eag/1_8_8" />
-                  <project path="$PROJECT_DIR$/eag/1_8_8/common" />
-                  <project path="$PROJECT_DIR$/eag/1_8_8/desktop" />
-                  <project path="$PROJECT_DIR$/eag/1_8_8/teavm-js" />
-                  <project path="$PROJECT_DIR$/eag/1_8_8/teavm-wasm_gc" />
+                  <project path="$PROJECT_DIR$/eagler/1_8_8" />
+                  <project path="$PROJECT_DIR$/eagler/1_8_8/common" />
+                  <project path="$PROJECT_DIR$/eagler/1_8_8/desktop" />
+                  <project path="$PROJECT_DIR$/eagler/1_8_8/teavm-js" />
+                  <project path="$PROJECT_DIR$/eagler/1_8_8/teavm-wasm_gc" />
                 </projects>
               </build>
             </builds>
@@ -23,11 +23,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/eag/1_8_8" />
-            <option value="$PROJECT_DIR$/eag/1_8_8/common" />
-            <option value="$PROJECT_DIR$/eag/1_8_8/desktop" />
-            <option value="$PROJECT_DIR$/eag/1_8_8/teavm-js" />
-            <option value="$PROJECT_DIR$/eag/1_8_8/teavm-wasm_gc" />
+            <option value="$PROJECT_DIR$/eagler/1_8_8" />
+            <option value="$PROJECT_DIR$/eagler/1_8_8/common" />
+            <option value="$PROJECT_DIR$/eagler/1_8_8/desktop" />
+            <option value="$PROJECT_DIR$/eagler/1_8_8/teavm-js" />
+            <option value="$PROJECT_DIR$/eagler/1_8_8/teavm-wasm_gc" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="true" />

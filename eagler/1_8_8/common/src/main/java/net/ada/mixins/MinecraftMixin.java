@@ -10,14 +10,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Minecraft.class)
 public class MinecraftMixin {
-    @Inject(method = "<init>", at = @At("HEAD"))
-    private void onInit(CallbackInfo ci) {
-
-        Herz herz = new Herz();
-        System.out.println("Initialized Herz");
-    }
-    @Inject(method = "run", at = @At("HEAD"))
+    @Inject(method = "startGame", at = @At("HEAD"))
     private void onInitialize(CallbackInfo ci) {
+        Herz herz = new Herz();
         Herz.INSTANCE.getEventBus().fireEvent(MinecraftInitEvent.class, new MinecraftInitEvent());
     }
 }
