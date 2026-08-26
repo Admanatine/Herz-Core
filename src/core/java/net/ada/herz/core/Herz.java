@@ -21,7 +21,7 @@ public class Herz {
     public Herz() {
         eventBus = new EventBus();
         herzPackageList = new ArrayList<>();
-        logger = LogManager.getLogger("[Herz]");
+        logger = LogManager.getLogger("Herz");
         // register core event
         registerEvents();
         registerListeners();
@@ -39,7 +39,12 @@ public class Herz {
         eventBus.addEvent(new EventHandler<>(MouseScrollEvent.class));
     }
     public void registerListeners() {
-
+        eventBus.registerListener(MinecraftInitEvent.class, event -> {
+            logger.info("Booting Minecraft");
+        });
+        eventBus.registerListener(ClientInitEvent.class, event -> {
+            logger.info("Initialized Herz Client Events");
+        });
     }
 
     public EventBus getEventBus() {
