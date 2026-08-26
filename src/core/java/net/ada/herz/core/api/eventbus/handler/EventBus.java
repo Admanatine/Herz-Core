@@ -1,5 +1,7 @@
 package net.ada.herz.core.api.eventbus.handler;
 
+import net.ada.herz.core.Herz;
+import net.ada.herz.core.HerzConfig;
 import net.ada.herz.core.api.eventbus.events.IEvent;
 import net.ada.herz.core.api.eventbus.events.IEventListener;
 
@@ -37,7 +39,9 @@ public class EventBus {
                     "Event is not registered: " + eventClass.getName()
             );
         }
-
+        if (HerzConfig.DEBUG) {
+            Herz.INSTANCE.getLogger().debug(String.format("Fireing event %s of type %s", eventClass.getName(), event.getClass().getName()));
+        }
         handler.fire(event);
     }
 

@@ -1,9 +1,10 @@
 package net.ada.herz.core;
 
 import net.ada.herz.core.api.data.packages.HerzPackage;
-import net.ada.herz.core.api.eventbus.events.IEvent;
 import net.ada.herz.core.api.eventbus.events.impl.core.ClientInitEvent;
 import net.ada.herz.core.api.eventbus.events.impl.core.MinecraftInitEvent;
+import net.ada.herz.core.api.eventbus.events.impl.core.TickEvent;
+import net.ada.herz.core.api.eventbus.events.impl.input.*;
 import net.ada.herz.core.api.eventbus.handler.EventBus;
 import net.ada.herz.core.api.eventbus.handler.EventHandler;
 import net.lax1dude.eaglercraft.v1_8.log4j.LogManager;
@@ -15,7 +16,7 @@ import java.util.List;
 public class Herz {
     List<HerzPackage> herzPackageList;
     EventBus eventBus;
-    Logger logger;
+    static Logger logger;
     public static Herz INSTANCE;
     public Herz() {
         eventBus = new EventBus();
@@ -25,15 +26,20 @@ public class Herz {
         registerEvents();
         registerListeners();
         INSTANCE = this;
+        eventBus.fireEvent(ClientInitEvent.class, new ClientInitEvent());
     }
     public void registerEvents() {
         eventBus.addEvent(new EventHandler<>(ClientInitEvent.class));
         eventBus.addEvent(new EventHandler<>(MinecraftInitEvent.class));
+        eventBus.addEvent(new EventHandler<>(KeyDownEvent.class));
+        eventBus.addEvent(new EventHandler<>(KeyReleasedEvent.class));
+        eventBus.addEvent(new EventHandler<>(TickEvent.class));
+        eventBus.addEvent(new EventHandler<>(MouseDownEvent.class));
+        eventBus.addEvent(new EventHandler<>(MouseReleasedEvent.class));
+        eventBus.addEvent(new EventHandler<>(MouseScrollEvent.class));
     }
     public void registerListeners() {
-        eventBus.registerListener(MinecraftInitEvent.class, event -> {
-            logger.info("Minecraft has initialized!");
-        });
+
     }
 
     public EventBus getEventBus() {
@@ -44,4 +50,7 @@ public class Herz {
         return herzPackageList;
     }
 
+    public Logger getLogger() {
+        return logger;
+    }
 }
