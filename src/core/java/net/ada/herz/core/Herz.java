@@ -26,7 +26,6 @@ public class Herz {
         registerEvents();
         registerListeners();
         INSTANCE = this;
-        eventBus.fireEvent(ClientInitEvent.class, new ClientInitEvent());
     }
     public void registerEvents() {
         eventBus.addEvent(new EventHandler<>(ClientInitEvent.class));

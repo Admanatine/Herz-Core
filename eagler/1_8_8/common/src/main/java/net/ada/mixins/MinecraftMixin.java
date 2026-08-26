@@ -1,6 +1,7 @@
 package net.ada.mixins;
 
 import net.ada.herz.core.Herz;
+import net.ada.herz.core.api.eventbus.events.impl.core.ClientInitEvent;
 import net.ada.herz.core.api.eventbus.events.impl.core.MinecraftInitEvent;
 import net.ada.herz.core.api.eventbus.events.impl.core.TickEvent;
 import net.ada.herz.core.api.eventbus.events.impl.input.*;
@@ -18,7 +19,11 @@ public class MinecraftMixin {
     @Inject(method = "run", at = @At("TAIL"))
     private void onInitialize(CallbackInfo ci) {
         Herz herz = new Herz();
+    }
+    @Inject(method = "startGame", at = @At("TAIL"))
+    private void onStartGame(CallbackInfo ci) {
         Herz.INSTANCE.getEventBus().fireEvent(MinecraftInitEvent.class, new MinecraftInitEvent());
+        Herz.INSTANCE.getEventBus().fireEvent(ClientInitEvent.class, new ClientInitEvent());
     }
 
     @Inject(method = "runTick", at = @At("HEAD"))
